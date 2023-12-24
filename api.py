@@ -123,3 +123,5 @@ async def delete_user(user_id: int, username: str = Depends(verify_user)):
     except Exception as e:
         # Em caso de exceção, retorna um erro interno do servidor
         raise HTTPException(status_code=500, detail=str(e))
+
+# Add login 
